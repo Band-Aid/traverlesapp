@@ -24,11 +24,14 @@ final class JMBStore {
         if let data = try? JSONEncoder().encode(profile) {
             UserDefaults.standard.set(data, forKey: key)
         }
+        let hasOnboarded = UserDefaults.standard.bool(forKey: "hasOnboarded")
+        PendoIntegration.identifyVisitor(profile, hasOnboarded: hasOnboarded)
     }
 
     func clear() {
         profile = nil
         UserDefaults.standard.removeObject(forKey: key)
+        PendoIntegration.clearVisitor()
     }
 }
 
