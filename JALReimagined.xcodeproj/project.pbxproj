@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04DFE4C4204717AE56640632 /* FlightRouteHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB277DE0065B955E69FC856 /* FlightRouteHeader.swift */; };
+		071DFAB508F5A3505FB93CED /* TerminalMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4E0FDD788D7C043E691F27 /* TerminalMapView.swift */; };
+		0FA45AF39D2ABE0B98761D73 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3BAD316588758E8184E1E6 /* MockData.swift */; };
+		1F08CDA28C227E9E3AE042FA /* FlightStatusStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973EAE2FC8ADC6858CE18B03 /* FlightStatusStore.swift */; };
+		2A18552CF34A8703EAA1CCA3 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005B4F9E85FD3EAE19C493B7 /* RootView.swift */; };
+		2D5656529B20D5ED0F331290 /* JMBLoginSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E379160E01261E0E0F04F /* JMBLoginSheet.swift */; };
+		332AE44D7737A65F1BFAD913 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = B777C8A6AB084A8B0468FB24 /* Components.swift */; };
+		371D69A4A32FC1E99E72851A /* AeroDataBoxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6767B6779409760D6CC1270 /* AeroDataBoxService.swift */; };
+		3D3F0B975A336887BBC8E446 /* JMBTextParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A52C0C11C11469B590C46F0 /* JMBTextParser.swift */; };
+		3F81A758503D4673D4FE1CB4 /* JMBScanSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B663E3361F739CCA39E1A9C /* JMBScanSheet.swift */; };
+		4372D40B5CD547BB83F72CB0 /* BoardingPassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB82F643ED7D4773C2BD0DE /* BoardingPassView.swift */; };
+		4484BBE37A4CED6EC2C18AC8 /* UberLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A4B3D86C9E0095B56DD11B /* UberLink.swift */; };
+		51B1A1FBFB54FC89555D4C89 /* JALTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED6F8EDA8EB796B3FD500B /* JALTheme.swift */; };
+		53E45E608013420B8EA120CE /* AddFlightSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34DA79443D49BF554AAAC43 /* AddFlightSheet.swift */; };
+		5555BA7A1DF35F886F61978E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93562665FA7725BF6A63391 /* HomeView.swift */; };
+		6136C1C3785C570B615C4013 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7567832A4F1F6C587A8505D4 /* OnboardingView.swift */; };
+		71751FB3FB1583CEC16E44BA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9B90657BE0B8D99E29FA4 /* ProfileView.swift */; };
+		72FFCB6243FA0B0AB1D25F2F /* CraneMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = B104B5819B15EF9F089E657B /* CraneMark.swift */; };
+		7AF027DC8F154E34E020D846 /* JALReimaginedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6C19F4F87655B3D0A38F39 /* JALReimaginedApp.swift */; };
+		7B4E891CB0C279E5C220B12F /* JMBStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962954DA02F82FFBEC8CED44 /* JMBStore.swift */; };
+		82C6673CA790FAE7802950AD /* TripDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DBC8DA719F3B8D40B9FC07 /* TripDetailView.swift */; };
+		A3DDF993B3E9F67BDC9D669B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872FB89B47EE3B9DDB8C7D2E /* Models.swift */; };
+		B658059C9FF5DA86625C3005 /* TripsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D37FD73836D027CB69D194 /* TripsView.swift */; };
+		B823D25EE790323039D53D20 /* FlightStatusCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359383008E991E7AA14E0373 /* FlightStatusCache.swift */; };
+		C5F2C568FEE08AF20991B248 /* CheckInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A787A1D604C5B92FA837B664 /* CheckInView.swift */; };
+		C9A888EC554B9932392A4B4D /* LiveFlightMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F9DE086FDFF05DBE3877DA /* LiveFlightMap.swift */; };
+		D0DF46424B863C77DFF1888F /* FlightStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810487F5EDC8ABBD289B32FC /* FlightStatusView.swift */; };
+		E0B0EA75B20B84C35C5ADDC6 /* JMBOCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B34CEDBECE7E1192352B597 /* JMBOCRService.swift */; };
+		E6749AB2E157B68D4299EBF9 /* TrackedFlightDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C4C32FA2D47EC51142B8EC /* TrackedFlightDetailView.swift */; };
+		EABF5FE01189FE6A047FCAEC /* MockFlightStatusService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0522C8057E05E07B26CE047F /* MockFlightStatusService.swift */; };
+		FCDB61C37157B1FEF69D20F1 /* FlightLiveStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57374C8FB977E76B91209ADB /* FlightLiveStatus.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		005B4F9E85FD3EAE19C493B7 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		0522C8057E05E07B26CE047F /* MockFlightStatusService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFlightStatusService.swift; sourceTree = "<group>"; };
+		1BB82F643ED7D4773C2BD0DE /* BoardingPassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardingPassView.swift; sourceTree = "<group>"; };
+		359383008E991E7AA14E0373 /* FlightStatusCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightStatusCache.swift; sourceTree = "<group>"; };
+		35D37FD73836D027CB69D194 /* TripsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsView.swift; sourceTree = "<group>"; };
+		3B1E379160E01261E0E0F04F /* JMBLoginSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMBLoginSheet.swift; sourceTree = "<group>"; };
+		3B663E3361F739CCA39E1A9C /* JMBScanSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMBScanSheet.swift; sourceTree = "<group>"; };
+		44DBC8DA719F3B8D40B9FC07 /* TripDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailView.swift; sourceTree = "<group>"; };
+		4AB277DE0065B955E69FC856 /* FlightRouteHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightRouteHeader.swift; sourceTree = "<group>"; };
+		4B6C19F4F87655B3D0A38F39 /* JALReimaginedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JALReimaginedApp.swift; sourceTree = "<group>"; };
+		57374C8FB977E76B91209ADB /* FlightLiveStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightLiveStatus.swift; sourceTree = "<group>"; };
+		59A4B3D86C9E0095B56DD11B /* UberLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberLink.swift; sourceTree = "<group>"; };
+		656D9BDE51C55A146968435B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		65ED6F8EDA8EB796B3FD500B /* JALTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JALTheme.swift; sourceTree = "<group>"; };
+		67C4C32FA2D47EC51142B8EC /* TrackedFlightDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackedFlightDetailView.swift; sourceTree = "<group>"; };
+		7567832A4F1F6C587A8505D4 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		7E4E0FDD788D7C043E691F27 /* TerminalMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalMapView.swift; sourceTree = "<group>"; };
+		810487F5EDC8ABBD289B32FC /* FlightStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightStatusView.swift; sourceTree = "<group>"; };
+		872FB89B47EE3B9DDB8C7D2E /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		8821B83C77CD39770CF8D063 /* JALReimagined.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = JALReimagined.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D3BAD316588758E8184E1E6 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		962954DA02F82FFBEC8CED44 /* JMBStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMBStore.swift; sourceTree = "<group>"; };
+		973EAE2FC8ADC6858CE18B03 /* FlightStatusStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightStatusStore.swift; sourceTree = "<group>"; };
+		9A52C0C11C11469B590C46F0 /* JMBTextParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMBTextParser.swift; sourceTree = "<group>"; };
+		9B34CEDBECE7E1192352B597 /* JMBOCRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMBOCRService.swift; sourceTree = "<group>"; };
+		A6767B6779409760D6CC1270 /* AeroDataBoxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AeroDataBoxService.swift; sourceTree = "<group>"; };
+		A787A1D604C5B92FA837B664 /* CheckInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInView.swift; sourceTree = "<group>"; };
+		B104B5819B15EF9F089E657B /* CraneMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CraneMark.swift; sourceTree = "<group>"; };
+		B777C8A6AB084A8B0468FB24 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		B93562665FA7725BF6A63391 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F34DA79443D49BF554AAAC43 /* AddFlightSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFlightSheet.swift; sourceTree = "<group>"; };
+		F8F9DE086FDFF05DBE3877DA /* LiveFlightMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveFlightMap.swift; sourceTree = "<group>"; };
+		F9F9B90657BE0B8D99E29FA4 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0EAAF1637C899E711D717FF9 /* Trips */ = {
+			isa = PBXGroup;
+			children = (
+				67C4C32FA2D47EC51142B8EC /* TrackedFlightDetailView.swift */,
+				44DBC8DA719F3B8D40B9FC07 /* TripDetailView.swift */,
+				35D37FD73836D027CB69D194 /* TripsView.swift */,
+			);
+			path = Trips;
+			sourceTree = "<group>";
+		};
+		136B131DB988D9706A6C902F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B93562665FA7725BF6A63391 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		14DE4073A893690AD4D29F3F /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				F34DA79443D49BF554AAAC43 /* AddFlightSheet.swift */,
+				7567832A4F1F6C587A8505D4 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		15FB999F1CE1878C14A400C5 /* FlightStatus */ = {
+			isa = PBXGroup;
+			children = (
+				810487F5EDC8ABBD289B32FC /* FlightStatusView.swift */,
+				F8F9DE086FDFF05DBE3877DA /* LiveFlightMap.swift */,
+				7E4E0FDD788D7C043E691F27 /* TerminalMapView.swift */,
+				59A4B3D86C9E0095B56DD11B /* UberLink.swift */,
+			);
+			path = FlightStatus;
+			sourceTree = "<group>";
+		};
+		3012102E7EC2CFC2F6D19F69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8821B83C77CD39770CF8D063 /* JALReimagined.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F057F3F179A17A8EE88111D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B777C8A6AB084A8B0468FB24 /* Components.swift */,
+				4AB277DE0065B955E69FC856 /* FlightRouteHeader.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		51CD9C0AE9DD165B6DC9158C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4B6C19F4F87655B3D0A38F39 /* JALReimaginedApp.swift */,
+				005B4F9E85FD3EAE19C493B7 /* RootView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		55E57EDE5CAD29D6A9A08EF2 /* JALReimagined */ = {
+			isa = PBXGroup;
+			children = (
+				656D9BDE51C55A146968435B /* Info.plist */,
+				51CD9C0AE9DD165B6DC9158C /* App */,
+				4F057F3F179A17A8EE88111D /* Components */,
+				B24F6493323EB103076A754C /* Data */,
+				9AC257A5F96AABAEE384C12C /* Features */,
+				EBD180D3AEA54229B84C9E29 /* Models */,
+				F5DEFF6DD65345BF9B8FC42B /* Services */,
+				FD4AADF2ABBC0661FF3204A5 /* Theme */,
+			);
+			path = JALReimagined;
+			sourceTree = "<group>";
+		};
+		6F9429F084381C0CE4246B01 /* BoardingPass */ = {
+			isa = PBXGroup;
+			children = (
+				1BB82F643ED7D4773C2BD0DE /* BoardingPassView.swift */,
+			);
+			path = BoardingPass;
+			sourceTree = "<group>";
+		};
+		9AC257A5F96AABAEE384C12C /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				6F9429F084381C0CE4246B01 /* BoardingPass */,
+				CECBF841518CFE1E9CC59C1E /* CheckIn */,
+				15FB999F1CE1878C14A400C5 /* FlightStatus */,
+				136B131DB988D9706A6C902F /* Home */,
+				14DE4073A893690AD4D29F3F /* Onboarding */,
+				9BA05379FBFEA656DE682110 /* Profile */,
+				0EAAF1637C899E711D717FF9 /* Trips */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		9BA05379FBFEA656DE682110 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				3B1E379160E01261E0E0F04F /* JMBLoginSheet.swift */,
+				3B663E3361F739CCA39E1A9C /* JMBScanSheet.swift */,
+				F9F9B90657BE0B8D99E29FA4 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		B24F6493323EB103076A754C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8D3BAD316588758E8184E1E6 /* MockData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		CECBF841518CFE1E9CC59C1E /* CheckIn */ = {
+			isa = PBXGroup;
+			children = (
+				A787A1D604C5B92FA837B664 /* CheckInView.swift */,
+			);
+			path = CheckIn;
+			sourceTree = "<group>";
+		};
+		CF8FE3472DF69BDE44D0EB9A = {
+			isa = PBXGroup;
+			children = (
+				55E57EDE5CAD29D6A9A08EF2 /* JALReimagined */,
+				3012102E7EC2CFC2F6D19F69 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EBD180D3AEA54229B84C9E29 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				872FB89B47EE3B9DDB8C7D2E /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F5DEFF6DD65345BF9B8FC42B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A6767B6779409760D6CC1270 /* AeroDataBoxService.swift */,
+				57374C8FB977E76B91209ADB /* FlightLiveStatus.swift */,
+				359383008E991E7AA14E0373 /* FlightStatusCache.swift */,
+				973EAE2FC8ADC6858CE18B03 /* FlightStatusStore.swift */,
+				9B34CEDBECE7E1192352B597 /* JMBOCRService.swift */,
+				962954DA02F82FFBEC8CED44 /* JMBStore.swift */,
+				9A52C0C11C11469B590C46F0 /* JMBTextParser.swift */,
+				0522C8057E05E07B26CE047F /* MockFlightStatusService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FD4AADF2ABBC0661FF3204A5 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				B104B5819B15EF9F089E657B /* CraneMark.swift */,
+				65ED6F8EDA8EB796B3FD500B /* JALTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9128BA0FF763B8F4A3600A41 /* JALReimagined */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10FF44257DCB873860E0A192 /* Build configuration list for PBXNativeTarget "JALReimagined" */;
+			buildPhases = (
+				E09CDAC39D981E91D3029FD4 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JALReimagined;
+			packageProductDependencies = (
+			);
+			productName = JALReimagined;
+			productReference = 8821B83C77CD39770CF8D063 /* JALReimagined.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7F6111D45B0430F18FAE41D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 7EB0090984CA529500B376A8 /* Build configuration list for PBXProject "JALReimagined" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF8FE3472DF69BDE44D0EB9A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3012102E7EC2CFC2F6D19F69 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9128BA0FF763B8F4A3600A41 /* JALReimagined */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E09CDAC39D981E91D3029FD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53E45E608013420B8EA120CE /* AddFlightSheet.swift in Sources */,
+				371D69A4A32FC1E99E72851A /* AeroDataBoxService.swift in Sources */,
+				4372D40B5CD547BB83F72CB0 /* BoardingPassView.swift in Sources */,
+				C5F2C568FEE08AF20991B248 /* CheckInView.swift in Sources */,
+				332AE44D7737A65F1BFAD913 /* Components.swift in Sources */,
+				72FFCB6243FA0B0AB1D25F2F /* CraneMark.swift in Sources */,
+				FCDB61C37157B1FEF69D20F1 /* FlightLiveStatus.swift in Sources */,
+				04DFE4C4204717AE56640632 /* FlightRouteHeader.swift in Sources */,
+				B823D25EE790323039D53D20 /* FlightStatusCache.swift in Sources */,
+				1F08CDA28C227E9E3AE042FA /* FlightStatusStore.swift in Sources */,
+				D0DF46424B863C77DFF1888F /* FlightStatusView.swift in Sources */,
+				5555BA7A1DF35F886F61978E /* HomeView.swift in Sources */,
+				7AF027DC8F154E34E020D846 /* JALReimaginedApp.swift in Sources */,
+				51B1A1FBFB54FC89555D4C89 /* JALTheme.swift in Sources */,
+				2D5656529B20D5ED0F331290 /* JMBLoginSheet.swift in Sources */,
+				E0B0EA75B20B84C35C5ADDC6 /* JMBOCRService.swift in Sources */,
+				3F81A758503D4673D4FE1CB4 /* JMBScanSheet.swift in Sources */,
+				7B4E891CB0C279E5C220B12F /* JMBStore.swift in Sources */,
+				3D3F0B975A336887BBC8E446 /* JMBTextParser.swift in Sources */,
+				C9A888EC554B9932392A4B4D /* LiveFlightMap.swift in Sources */,
+				0FA45AF39D2ABE0B98761D73 /* MockData.swift in Sources */,
+				EABF5FE01189FE6A047FCAEC /* MockFlightStatusService.swift in Sources */,
+				A3DDF993B3E9F67BDC9D669B /* Models.swift in Sources */,
+				6136C1C3785C570B615C4013 /* OnboardingView.swift in Sources */,
+				71751FB3FB1583CEC16E44BA /* ProfileView.swift in Sources */,
+				2A18552CF34A8703EAA1CCA3 /* RootView.swift in Sources */,
+				071DFAB508F5A3505FB93CED /* TerminalMapView.swift in Sources */,
+				E6749AB2E157B68D4299EBF9 /* TrackedFlightDetailView.swift in Sources */,
+				82C6673CA790FAE7802950AD /* TripDetailView.swift in Sources */,
+				B658059C9FF5DA86625C3005 /* TripsView.swift in Sources */,
+				4484BBE37A4CED6EC2C18AC8 /* UberLink.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3453C52B72E09A04281F85D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		5062F67B583B753C8D781DB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = JALReimagined/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jalhack.JALReimagined;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8A40F2ED0C055403D8CB51AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = JALReimagined/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jalhack.JALReimagined;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A05A853057DFD68E7727EC6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10FF44257DCB873860E0A192 /* Build configuration list for PBXNativeTarget "JALReimagined" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5062F67B583B753C8D781DB2 /* Debug */,
+				8A40F2ED0C055403D8CB51AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7EB0090984CA529500B376A8 /* Build configuration list for PBXProject "JALReimagined" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A05A853057DFD68E7727EC6F /* Debug */,
+				3453C52B72E09A04281F85D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7F6111D45B0430F18FAE41D /* Project object */;
+}
