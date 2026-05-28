@@ -28,7 +28,8 @@ struct JALReimaginedApp: App {
                     }
                 }
                 .onOpenURL { url in
-                    _ = appDelegate.application(UIApplication.shared, open: url, options: [:])
+                    let handled = appDelegate.application(UIApplication.shared, open: url, options: [:])
+                    if !handled { return }
                 }
         }
         .backgroundTask(.appRefresh(Self.refreshTaskID)) {
