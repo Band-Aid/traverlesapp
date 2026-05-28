@@ -46,4 +46,10 @@ enum PendoIntegration {
     static func clearVisitor() {
         PendoManager.shared().startSession("", accountId: "", visitorData: [:], accountData: [:])
     }
+
+    static func handleOpenURL(_ url: URL) -> Bool {
+        guard url.scheme?.hasPrefix("pendo") == true else { return false }
+        PendoManager.shared().initWith(url)
+        return true
+    }
 }

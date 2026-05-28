@@ -28,7 +28,7 @@ struct JALReimaginedApp: App {
                     }
                 }
                 .onOpenURL { url in
-                    let handled = appDelegate.application(UIApplication.shared, open: url, options: [:])
+                    let handled = PendoIntegration.handleOpenURL(url)
                     if !handled {
                         NSLog("Unhandled URL: %@", url.absoluteString)
                     }
