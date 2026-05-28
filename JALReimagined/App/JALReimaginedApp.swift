@@ -29,7 +29,9 @@ struct JALReimaginedApp: App {
                 }
                 .onOpenURL { url in
                     let handled = appDelegate.application(UIApplication.shared, open: url, options: [:])
-                    if !handled { return }
+                    if !handled {
+                        NSLog("Unhandled URL: %@", url.absoluteString)
+                    }
                 }
         }
         .backgroundTask(.appRefresh(Self.refreshTaskID)) {
