@@ -27,12 +27,6 @@ struct JALReimaginedApp: App {
                         PendoIntegration.identifyVisitor(profile, hasOnboarded: hasOnboarded)
                     }
                 }
-                .onOpenURL { url in
-                    let handled = PendoIntegration.handleOpenURL(url)
-                    if !handled {
-                        NSLog("Unhandled URL: %@", url.absoluteString)
-                    }
-                }
         }
         .backgroundTask(.appRefresh(Self.refreshTaskID)) {
             await flightStore.backgroundRefresh()

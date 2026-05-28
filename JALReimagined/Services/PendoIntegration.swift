@@ -7,6 +7,7 @@ enum PendoIntegration {
 
     /// The Pendo app key provisioned for this application.
     private static let appKey = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhY2VudGVyIjoidXMiLCJrZXkiOiIyZmY2MmFkNWZhMWQ0M2FmMTAxZjEzYmU3OWVlNzVjZGFhN2FhMWM3N2VhYjg5MTdhZjY1Mjg3YjkzZjlkZDA0MmMwZGY5MWJkNzUxZmE4ZGU2MGUyMWUyMTc1MWFmYTNkN2MxZDA4MDVjOWNhN2NkMjRjYzM3ZjIyYjc0YTc3MDcxZmQxMGZhMTIwZDNhZTdmMmRlYWMzZmI4NGE4NWJmMGJhNGJiZWJlMTFjMTc3OTViODQ4NGU0NmZiOTgxZjkuOWZiMWJhZDc4OTEwMmIxOGUwNTAyODkzOGU5Y2IxZjQuOGU3ZThmYTg0ZTM1ZWQyNmQ4NzE3ZGNkODljNWU5ZTc2MTg3OTIxZWVlYWE5NzI3ZjBlNTM5ZTMwZDkzZTc4ZiJ9.D3aFtq_upCnPXIO7s-6vXhL5zVW8hJyMv2djKQmCBzIKpD-ai2fYcKi-E0WaTGYZiMiQRUKUOPEe_VXzB8ydgpmHz1Ja8-haA7xD6IEWkV5WVZlWXIwfPu9JhFH0sYX5U3-WN1klUhOzjqjQ-YfzjFtVqoeFGqWIuKd7E6pgATA"
+    private static let deepLinkScheme = "pendo-e0bd942a"
 
     /// Call once from the `App` initializer to load the Pendo agent.
     /// Starts an anonymous session so Pendo begins collecting analytics
@@ -48,7 +49,7 @@ enum PendoIntegration {
     }
 
     static func handleOpenURL(_ url: URL) -> Bool {
-        guard url.scheme?.hasPrefix("pendo") == true else { return false }
+        guard url.scheme == deepLinkScheme else { return false }
         PendoManager.shared().initWith(url)
         return true
     }
