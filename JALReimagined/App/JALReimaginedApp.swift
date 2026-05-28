@@ -9,6 +9,10 @@ struct JALReimaginedApp: App {
 
     static let refreshTaskID = "com.jalhack.refresh"
 
+    init() {
+        PendoIntegration.setup()
+    }
+
     var body: some Scene {
         WindowGroup {
             RootView()
@@ -16,9 +20,12 @@ struct JALReimaginedApp: App {
                 .environment(jmbStore)
                 .preferredColorScheme(.light)
                 .tint(JALTheme.crane)
-                .onAppear { scheduleNextRefresh() }
-                .onOpenURL { url in
-                    _ = appDelegate.application(UIApplication.shared, open: url, options: [:])
+                .onAppear {
+                    scheduleNextRefresh()
+                    if let profile = jmbStore.profile {
+                        let hasOnboarded = UserDefaults.standard.bool(forKey: "hasOnboarded")
+                        PendoIntegration.identifyVisitor(profile, hasOnboarded: hasOnboarded)
+                    }
                 }
         }
         .backgroundTask(.appRefresh(Self.refreshTaskID)) {
