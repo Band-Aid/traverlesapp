@@ -3,6 +3,7 @@ import BackgroundTasks
 
 @main
 struct JALReimaginedApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @State private var flightStore = FlightStatusStore.makeDefault()
     @State private var jmbStore = JMBStore()
 
@@ -21,11 +22,13 @@ struct JALReimaginedApp: App {
                 .tint(JALTheme.crane)
                 .onAppear {
                     scheduleNextRefresh()
-                    // Identify visitor with existing profile if available
                     if let profile = jmbStore.profile {
                         let hasOnboarded = UserDefaults.standard.bool(forKey: "hasOnboarded")
                         PendoIntegration.identifyVisitor(profile, hasOnboarded: hasOnboarded)
                     }
+                }
+                .onOpenURL { url in
+                    _ = appDelegate.application(UIApplication.shared, open: url, options: [:])
                 }
         }
         .backgroundTask(.appRefresh(Self.refreshTaskID)) {
