@@ -3,6 +3,7 @@ import BackgroundTasks
 
 @main
 struct JALReimaginedApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @State private var flightStore = FlightStatusStore.makeDefault()
     @State private var jmbStore = JMBStore()
 
@@ -16,6 +17,9 @@ struct JALReimaginedApp: App {
                 .preferredColorScheme(.light)
                 .tint(JALTheme.crane)
                 .onAppear { scheduleNextRefresh() }
+                .onOpenURL { url in
+                    _ = appDelegate.application(UIApplication.shared, open: url, options: [:])
+                }
         }
         .backgroundTask(.appRefresh(Self.refreshTaskID)) {
             await flightStore.backgroundRefresh()

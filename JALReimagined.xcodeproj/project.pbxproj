@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1B2C3D4E5F6A7B8C9D0E1F2 /* Pendo in Frameworks */ = {isa = PBXBuildFile; productRef = C3D4E5F6A7B8C9D0E1F2A3B4 /* Pendo */; };
+		E5F6A7B8C9D0E1F2A3B4C5D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E5F6A7B8C9D0E1F2A3B4C5 /* AppDelegate.swift */; };
 		04DFE4C4204717AE56640632 /* FlightRouteHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB277DE0065B955E69FC856 /* FlightRouteHeader.swift */; };
 		071DFAB508F5A3505FB93CED /* TerminalMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4E0FDD788D7C043E691F27 /* TerminalMapView.swift */; };
 		0FA45AF39D2ABE0B98761D73 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3BAD316588758E8184E1E6 /* MockData.swift */; };
@@ -41,6 +43,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D4E5F6A7B8C9D0E1F2A3B4C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		005B4F9E85FD3EAE19C493B7 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		0522C8057E05E07B26CE047F /* MockFlightStatusService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFlightStatusService.swift; sourceTree = "<group>"; };
 		1BB82F643ED7D4773C2BD0DE /* BoardingPassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardingPassView.swift; sourceTree = "<group>"; };
@@ -135,6 +138,7 @@
 		51CD9C0AE9DD165B6DC9158C /* App */ = {
 			isa = PBXGroup;
 			children = (
+				D4E5F6A7B8C9D0E1F2A3B4C5 /* AppDelegate.swift */,
 				4B6C19F4F87655B3D0A38F39 /* JALReimaginedApp.swift */,
 				005B4F9E85FD3EAE19C493B7 /* RootView.swift */,
 			);
@@ -252,6 +256,7 @@
 			buildConfigurationList = 10FF44257DCB873860E0A192 /* Build configuration list for PBXNativeTarget "JALReimagined" */;
 			buildPhases = (
 				E09CDAC39D981E91D3029FD4 /* Sources */,
+				F6A7B8C9D0E1F2A3B4C5D6E7 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,6 +264,7 @@
 			);
 			name = JALReimagined;
 			packageProductDependencies = (
+				C3D4E5F6A7B8C9D0E1F2A3B4 /* Pendo */,
 			);
 			productName = JALReimagined;
 			productReference = 8821B83C77CD39770CF8D063 /* JALReimagined.app */;
@@ -288,6 +294,9 @@
 			productRefGroup = 3012102E7EC2CFC2F6D19F69 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
+			packageReferences = (
+				B2C3D4E5F6A7B8C9D0E1F2A3 /* XCRemoteSwiftPackageReference "pendo-mobile-sdk" */,
+			);
 			targets = (
 				9128BA0FF763B8F4A3600A41 /* JALReimagined */,
 			);
@@ -327,6 +336,7 @@
 				2A18552CF34A8703EAA1CCA3 /* RootView.swift in Sources */,
 				071DFAB508F5A3505FB93CED /* TerminalMapView.swift in Sources */,
 				E6749AB2E157B68D4299EBF9 /* TrackedFlightDetailView.swift in Sources */,
+				E5F6A7B8C9D0E1F2A3B4C5D6 /* AppDelegate.swift in Sources */,
 				82C6673CA790FAE7802950AD /* TripDetailView.swift in Sources */,
 				B658059C9FF5DA86625C3005 /* TripsView.swift in Sources */,
 				4484BBE37A4CED6EC2C18AC8 /* UberLink.swift in Sources */,
@@ -334,6 +344,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6A7B8C9D0E1F2A3B4C5D6E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B2C3D4E5F6A7B8C9D0E1F2 /* Pendo in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		3453C52B72E09A04281F85D9 /* Release */ = {
@@ -515,6 +536,25 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+	};
+/* Begin XCRemoteSwiftPackageReference section */
+		B2C3D4E5F6A7B8C9D0E1F2A3 /* XCRemoteSwiftPackageReference "pendo-mobile-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pendo-io/pendo-mobile-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C3D4E5F6A7B8C9D0E1F2A3B4 /* Pendo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2C3D4E5F6A7B8C9D0E1F2A3 /* XCRemoteSwiftPackageReference "pendo-mobile-sdk" */;
+			productName = Pendo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B7F6111D45B0430F18FAE41D /* Project object */;
 }
